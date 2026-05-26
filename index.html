@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="美國 AI 工具 YouTuber 合作清單 - 20 位精選候選頻道，針對 AI 會議紀錄/訪談轉錄產品的白領受眾">
-<title>美國 AI Tools YouTuber 合作清單｜AI 會議紀錄產品 outreach</title>
+<meta name="description" content="AI 會議紀錄 / 訪談轉錄產品 YouTuber 合作清單 - 美國 20 位 + 台灣 15 位精選候選頻道，受眾為 20-40 歲開會密集白領">
+<title>AI 會議紀錄產品 YouTuber 合作清單｜美國 + 台灣</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
@@ -170,6 +170,35 @@
   }
   footer code { background: #ececec; padding: 1px 5px; border-radius: 3px; font-size: 11.5px; }
 
+  /* Region tabs */
+  .region-tabs {
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: var(--shadow);
+  }
+  .region-tabs .container { display: flex; gap: 4px; padding-top: 0; padding-bottom: 0; }
+  .region-tab {
+    appearance: none;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 16px 22px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-family: inherit;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .region-tab:hover { color: var(--text); }
+  .region-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .region-tab .count { font-size: 12px; font-weight: 500; color: var(--text-light); margin-left: 4px; }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
   /* Mobile adjustments */
   @media (max-width: 640px) {
     .youtuber-grid { grid-template-columns: 1fr; }
@@ -179,6 +208,7 @@
     .stat strong { font-size: 16px; }
     nav.toc { display: none; }
     .container { padding: 0 16px; }
+    .region-tab { padding: 13px 16px; font-size: 14px; }
   }
 </style>
 </head>
@@ -186,16 +216,26 @@
 
 <header class="hero">
   <div class="container">
-    <h1>美國 AI 工具 YouTuber 合作清單</h1>
+    <h1>AI 會議紀錄產品 · YouTuber 合作清單</h1>
     <p class="subtitle">針對 AI 會議紀錄 / 訪談轉錄產品｜受眾：20–40 歲開會密集白領</p>
     <div class="hero-stats">
-      <div class="stat"><strong>20</strong>位驗證候選</div>
-      <div class="stat"><strong>50K–200K</strong>核心訂閱區間</div>
-      <div class="stat"><strong>6</strong>個 vertical 覆蓋</div>
-      <div class="stat"><strong>2026-05-26</strong>數據驗證日</div>
+      <div class="stat"><strong>35</strong>位驗證候選</div>
+      <div class="stat"><strong>美國 20 + 台灣 15</strong></div>
+      <div class="stat"><strong>yt-dlp</strong>實際數據驗證</div>
+      <div class="stat"><strong>2026-05-26</strong>更新</div>
     </div>
   </div>
 </header>
+
+<div class="region-tabs">
+  <div class="container">
+    <button class="region-tab active" data-tab="tab-us" onclick="switchTab('tab-us', this)">🇺🇸 美國 YouTuber<span class="count">20 位</span></button>
+    <button class="region-tab" data-tab="tab-tw" onclick="switchTab('tab-tw', this)">🇹🇼 台灣 YouTuber<span class="count">15 位</span></button>
+  </div>
+</div>
+
+<!-- ============ TAB: 美國 ============ -->
+<div class="tab-panel active" id="tab-us">
 
 <nav class="toc">
   <div class="container">
@@ -711,14 +751,295 @@
 </section>
 
 </main>
+</div><!-- end tab-us -->
+
+<!-- ============ TAB: 台灣 ============ -->
+<div class="tab-panel" id="tab-tw">
+
+<nav class="toc">
+  <div class="container">
+    <div class="toc-inner">
+      <a href="#tw-overview">概覽</a>
+      <a href="#tw-tier-a">Tier A · 5 位</a>
+      <a href="#tw-tier-b">Tier B · 5 位</a>
+      <a href="#tw-tier-c">Tier C · 5 位</a>
+      <a href="#tw-next">下一步</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+
+<section id="tw-overview">
+  <div class="info-card blue">
+    <strong>受眾基準參考：</strong>以 <a href="https://www.youtube.com/@austinchou888" target="_blank" rel="noopener"><strong>Austin Chou MooSun（@austinchou888，150K）</strong></a> 為對標範本——中文 AI 工具教學、受眾為台灣 20–40 歲上班族。他近期甚至做過「3 小時會議 1 分鐘摘要逐字稿，訪談、筆記都適用 feat. 傳譯寶AI」，與本產品高度重疊。本頁挑選與其受眾屬性接近的台灣頻道。
+  </div>
+  <div class="info-card green">
+    <strong>✅ 驗證方法：</strong>同美國頁，所有訂閱數用 <code>yt-dlp</code> 直連 YouTube API 抓取，受眾畫像依實際近期影片標題判定（非頻道自報）。
+  </div>
+  <div class="info-card yellow">
+    <strong>台灣市場規模調整：</strong>台灣人口約為美國的 1/14，故「中型」訂閱區間下修為約 <strong>20K–250K</strong>。同時台灣 AI 頻道也出現與美國相同的「轉向 Claude Code / AI Agent 開發者」現象（如學長Ethan），挑選時同樣以受眾是否為「白領上班族」為準。
+  </div>
+</section>
+
+<!-- TW Tier A -->
+<section id="tw-tier-a">
+  <div class="section-header">
+    <h2>Tier A 完美命中（AI 工具 / 生產力，台灣上班族）</h2>
+    <span class="tier-badge tier-a-badge">5 位 · 優先接洽</span>
+  </div>
+  <div class="youtuber-grid">
+
+    <div class="yt-card">
+      <div class="yt-card-top"><span class="yt-num">#1</span><h3 class="yt-name">泛科學院</h3><span class="yt-stars">★★★★★</span></div>
+      <div><span class="yt-subs in-range">258,000</span> <span class="vertical-tag">AI 生產力</span></div>
+      <div class="yt-handle"><a href="https://www.youtube.com/@panscischool" target="_blank" rel="noopener">youtube.com/@panscischool ↗</a></div>
+      <div class="yt-label">受眾</div>
+      <p class="yt-text">頻道自述「在 AI 海嘯來臨時陪你成長…用最簡單的方式提升你的工作效率」，標準上班族 AI 工具教學</p>
+      <div class="yt-label">近期影片</div>
+      <p class="yt-recent">「Claude 免費版 5 大神功能…上班族必看的 AI 省錢工作流」｜「論文寫到崩潰？AI 讓你準時畢業」｜「NotebookLM vs Manus 實測」</p>
+      <div class="yt-label">切入點</div>
+      <p class="yt-text">標題已出現「上班族必看」；會議紀錄＝省時工作流的完美題材</p>
+    </div>
+
+    <div class="yt-card">
+      <div class="yt-card-top"><span class="yt-num">#2</span><h3 class="yt-name">Austin Chou MooSun<span class="new-tag">基準</span></h3><span class="yt-stars">★★★★★</span></div>
+      <div><span class="yt-subs in-range">150,000</span> <span class="vertical-tag">AI 工具</span></div>
+      <div class="yt-handle"><a href="https://www.youtube.com/@austinchou888" target="_blank" rel="noopener">youtube.com/@austinchou888 ↗</a></div>
+      <div class="yt-label">受眾</div>
+      <p class="yt-text">使用者指定的對標範本；中文 AI 工具、生產力、科技教學，受眾為台灣上班族</p>
+      <div class="yt-label">近期影片</div>
+      <p class="yt-recent">「超速AI筆記！3小時會議1分鐘摘要與逐字稿，訪談、筆記都適用 feat.傳譯寶AI」｜「Gemini + NotebookLM 多模態」</p>
+      <div class="yt-label">切入點</div>
+      <p class="yt-text">已實際做過 AI 會議紀錄置入（傳譯寶AI），合作模式現成</p>
+    </div>
+
+    <div class="yt-card">
+      <div class="yt-card-top"><span class="yt-num">#3</span><h3 class="yt-name">柚智夫妻 X 雷蒙三十</h3><span class="yt-stars">★★★★★</span></div>
+      <div><span class="yt-subs in-range">115,000</span> <span class="vertical-tag">AI</span> <span class="vertical-tag">生產力</span> <span class="vertical-tag">Notion</span></div>
+      <div class="yt-handle"><a href="https://www.youtube.com/@yuiraymond" target="_blank" rel="noopener">youtube.com/@yuiraymond ↗</a></div>
+      <div class="yt-label">受眾</div>
+      <p class="yt-text">「熱愛研究新科技、AI 和生產力工作術的雷蒙」；一人公司/遠距工作/Notion 教學服務</p>
+      <div class="yt-label">近期影片</div>
+      <p class="yt-recent">AI 工具、生產力工作術、Notion 教學（raymondhouch.com 提供 Notion 教學服務）</p>
+      <div class="yt-label">切入點</div>
+      <p class="yt-text">中文圈最具影響力的「聰明工作」KOL 之一，會議紀錄→Notion 工作流天然契合</p>
+    </div>
+
+    <div class="yt-card">
+      <div class="yt-card-top"><span class="yt-num">#4</span><h3 class="yt-name">ami.moment</h3><span class="yt-stars">★★★★★</span></div>
+      <div><span class="yt-subs in-range">77,200</span> <span class="vertical-tag">知識管理</span> <span class="vertical-tag">筆記</span></div>
+      <div class="yt-handle"><a href="https://www.youtube.com/@ami.moment" target="_blank" rel="noopener">youtube.com/@ami.moment ↗</a></div>
+      <div class="yt-label">受眾</div>
+      <p class="yt-text">前投資銀行 PR 轉自由工作者；主打知識管理、筆記、個人品牌；高知識密度白領受眾</p>
+      <div class="yt-label">近期影片</div>
+      <p class="yt-recent">「Obsidian + AI 知識管理與內容創作」｜「打造自動剪輯的 AI agent」｜「2026 我如何用日誌與筆記整理人生」</p>
+      <div class="yt-label">切入點</div>
+      <p class="yt-text">筆記/知識管理族群＝會議紀錄產品最直接的買家畫像</p>
+    </div>
+
+    <div class="yt-card">
+      <div class="yt-card-top"><span class="yt-num">#5</span><h3 class="yt-name">I'm Scorpio（阿湯）</h3><span class="yt-stars">★★★★</span></div>
+      <div><span class="yt-subs in-range">75,700</span> <span class="vertical-tag">AI 工具</span> <span class="vertical-tag">3C</span></div>
+      <div class="yt-handle"><a href="https://www.youtube.com/@s3clife" target="_blank" rel="noopener">youtube.com/@s3clife ↗</a></div>
+      <div class="yt-label">受眾</div>
+      <p class="yt-text">「testing 3C gadgets and sharing AI tools」；科技 + AI 工具實作受眾</p>
+      <div class="yt-label">近期影片</div>
+      <p class="yt-recent">「NotebookLM 五大進階實戰教學」｜「履歷健檢、防 AI 幻覺」｜「LINE AI 客服建置實戰」</p>
+      <div class="yt-label">切入點</div>
+      <p class="yt-text">擅長 hands-on 實戰教學；可做「會議紀錄 + 自動化串接」應用情境</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- TW Tier B -->
+<section id="tw-tier-b">
+  <div class="section-header">
+    <h2>Tier B 高契合（訪談型 / Notion / 職場）</h2>
+    <span class="tier-badge tier-b-badge">5 位</span>
+  </div>
+  <div class="youtuber-grid">
+
+    <div class="yt-card">
+      <div class="yt-card-top"><span class="yt-num">#6</span><h3 class="yt-name">查理的創業化合物</h3><span class="yt-stars">★★★★★</span></div>
+      <div><span class="yt-subs in-range">169,000</span> <span class="vertical-tag">商業訪談</span></div>
+      <div class="yt-handle"><a href="https://www.youtube.com/@charlies.insight" target="_blank" rel="noopener">youtube.com/@charlies.insight ↗</a></div>
+      <div class="yt-label">受眾</div>
+      <p class="yt-text">商業採訪型頻道，「透過商業採訪向創業者、企業家學習」；受眾為創業者/商業人士</p>
+      <div class="yt-label">近期影片</div>
+      <p class="yt-recent">「ft. CNFlower 創辦人」｜「ft. 談判大叔 陳侯勳」｜「ft. MetAI 共同創辦人 劉大維」（皆為訪談）</p>
+      <div class="yt-label">切入點</div>
+      <p class="yt-text">頻道本身就是訪談形式＝產品的 production tool（訪談轉錄 use case）</p>
+    </div>
+
+    <div class="yt-card">
+      <div class="yt-card-top"><span class="yt-num">#7</span><h3 class="yt-name">社畜倫森</h3><span class="yt-stars">★★★★★</span></div>
+      <div><span class="yt-subs under">18,100（規模小）</span> <span class="vertical-tag">Notion</span> <span class="vertical-tag">上班族</span></div>
+      <div class="yt-handle"><a href="https://www.youtube.com/@ShockTruelife70" target="_blank" rel="noopener">youtube.com/@ShockTruelife70 ↗</a></div>
+      <div class="yt-label">受眾</div>
+      <p class="yt-text">「所有 Notion 筆記技巧…結合生活、職場運用」；頻道名「社畜」直接命中上班族</p>
+      <div class="yt-label">近期影片</div>
+      <p class="yt-recent">「拒絕加班！Notion 自動化每天多出 1 小時處理高價值工作」｜「準時打卡安心下班工作特化模板」</p>
+      <div class="yt-label">備註</div>
+      <p class="yt-text">訂閱小但受眾精準度滿分；報價親民、ROI 高的測試型合作</p>
+    </div>
+
+    <div class="yt-card">
+      <div class="yt-card-top"><span class="yt-num">#8</span><h3 class="yt-name">薑餅資</h3><span class="yt-stars">★★★★</span></div>
+      <div><span class="yt-subs over">305,000（略大）</span> <span class="vertical-tag">Notion</span> <span class="vertical-tag">生產力</span></div>
+      <div class="yt-handle"><a href="https://www.youtube.com/@gingerbread0529" target="_blank" rel="noopener">youtube.com/@gingerbread0529 ↗</a></div>
+      <div class="yt-label">受眾</div>
+      <p class="yt-text">台灣知名 Notion / 生產力 / 時間管理 YouTuber，受眾為追求效率的上班族與學生</p>
+      <div class="yt-label">近期影片</div>
+      <p class="yt-recent">Notion 教學、時間管理、自由工作者實作指南（與大人學 Small Talk 合作過）</p>
+      <div class="yt-label">備註</div>
+      <p class="yt-text">規模較大但題材完全對；可做 Notion + 會議紀錄整合教學</p>
+    </div>
+
+    <div class="yt-card">
+      <div class="yt-card-top"><span class="yt-num">#9</span><h3 class="yt-name">Hi, 迷途艾比</h3><span class="yt-stars">★★★★</span></div>
+      <div><span class="yt-subs under">30,600（規模小）</span> <span class="vertical-tag">AI 工具</span> <span class="vertical-tag">自我成長</span></div>
+      <div class="yt-handle"><a href="https://www.youtube.com/@histrayivy" target="_blank" rel="noopener">youtube.com/@histrayivy ↗</a></div>
+      <div class="yt-label">受眾</div>
+      <p class="yt-text">「熱愛探索和分析」、有「關於工作的迷途系列」；年輕職場女性自我成長受眾</p>
+      <div class="yt-label">近期影片</div>
+      <p class="yt-recent">「2026 必讀！手機 AI 軟體推薦」｜「用 AI 創造複利效應」｜「最快達成原子習慣」</p>
+      <div class="yt-label">備註</div>
+      <p class="yt-text">AI 工具 + 自我成長題材；女性職場受眾，差異化覆蓋</p>
+    </div>
+
+    <div class="yt-card">
+      <div class="yt-card-top"><span class="yt-num">#10</span><h3 class="yt-name">經理人</h3><span class="yt-stars">★★★★</span></div>
+      <div><span class="yt-subs in-range">64,400</span> <span class="vertical-tag">管理</span> <span class="vertical-tag">職場媒體</span></div>
+      <div class="yt-handle"><a href="https://www.youtube.com/@ManagerToday" target="_blank" rel="noopener">youtube.com/@ManagerToday ↗</a></div>
+      <div class="yt-label">受眾</div>
+      <p class="yt-text">「全台最大經理人社群」；受眾為主管、經理人——會議密度最高的職位</p>
+      <div class="yt-label">近期影片</div>
+      <p class="yt-recent">管理知識、職場心法、商業案例拆解</p>
+      <div class="yt-label">切入點</div>
+      <p class="yt-text">媒體型頻道，適合做品牌置入或 sponsored 專題；經理人＝開會最多</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- TW Tier C -->
+<section id="tw-tier-c">
+  <div class="section-header">
+    <h2>Tier C 鄰近受眾（業務 / 房仲 / 職場 / 行銷，規模較大）</h2>
+    <span class="tier-badge tier-c-badge">5 位 · vertical 覆蓋</span>
+  </div>
+  <div class="youtuber-grid">
+
+    <div class="yt-card">
+      <div class="yt-card-top"><span class="yt-num">#11</span><h3 class="yt-name">安娜馭房術</h3><span class="yt-stars">★★★★</span></div>
+      <div><span class="yt-subs in-range">130,000</span> <span class="vertical-tag">房仲</span></div>
+      <div class="yt-handle"><a href="https://www.youtube.com/@anna_getaway" target="_blank" rel="noopener">youtube.com/@anna_getaway ↗</a></div>
+      <div class="yt-label">受眾</div>
+      <p class="yt-text">「你的房地產小幫手」；受眾為房仲與購屋者——房仲是帶看/客戶諮詢密集職位</p>
+      <div class="yt-label">切入點</div>
+      <p class="yt-text">台灣 real estate vertical 主力；帶看/客戶 call 轉錄→跟進</p>
+    </div>
+
+    <div class="yt-card">
+      <div class="yt-card-top"><span class="yt-num">#12</span><h3 class="yt-name">張邁可</h3><span class="yt-stars">★★★★</span></div>
+      <div><span class="yt-subs over">226,000（略大）</span> <span class="vertical-tag">業務銷售</span></div>
+      <div class="yt-handle"><a href="https://www.youtube.com/@chang-mike" target="_blank" rel="noopener">youtube.com/@chang-mike ↗</a></div>
+      <div class="yt-label">受眾</div>
+      <p class="yt-text">20 年業務經驗，經營「超級業務商學院」；受眾為業務員/銷售主管</p>
+      <div class="yt-label">切入點</div>
+      <p class="yt-text">台灣 sales vertical 最大 KOL；銷售會議/客戶拜訪轉錄是核心痛點</p>
+    </div>
+
+    <div class="yt-card">
+      <div class="yt-card-top"><span class="yt-num">#13</span><h3 class="yt-name">大人學</h3><span class="yt-stars">★★★</span></div>
+      <div><span class="yt-subs over">224,000（略大）</span> <span class="vertical-tag">職場技能</span></div>
+      <div class="yt-handle"><a href="https://www.youtube.com/@da.ren.cademy" target="_blank" rel="noopener">youtube.com/@da.ren.cademy ↗</a></div>
+      <div class="yt-label">受眾</div>
+      <p class="yt-text">職涯規劃、人際溝通、商業管理知識平台；廣泛白領上班族受眾</p>
+      <div class="yt-label">切入點</div>
+      <p class="yt-text">有「商務簡報術」等課程；可結合「開會效率」主題置入</p>
+    </div>
+
+    <div class="yt-card">
+      <div class="yt-card-top"><span class="yt-num">#14</span><h3 class="yt-name">七七行銷筆記</h3><span class="yt-stars">★★★</span></div>
+      <div><span class="yt-subs over">234,000（略大）</span> <span class="vertical-tag">行銷</span> <span class="vertical-tag">商業</span></div>
+      <div class="yt-handle"><a href="https://www.youtube.com/@77MediaBook" target="_blank" rel="noopener">youtube.com/@77MediaBook ↗</a></div>
+      <div class="yt-label">受眾</div>
+      <p class="yt-text">行銷、創業與商業策略知識；受眾為行銷人與小型企業主</p>
+      <div class="yt-label">切入點</div>
+      <p class="yt-text">行銷顧問族群＝客戶會議高頻；可做 brief 自動化角度</p>
+    </div>
+
+    <div class="yt-card">
+      <div class="yt-card-top"><span class="yt-num">#15</span><h3 class="yt-name">學長Ethan</h3><span class="yt-stars">★★★</span></div>
+      <div><span class="yt-subs in-range">197,000</span> <span class="vertical-tag">AI 數位變現</span></div>
+      <div class="yt-handle"><a href="https://www.youtube.com/@TikTokEthan" target="_blank" rel="noopener">youtube.com/@TikTokEthan ↗</a></div>
+      <div class="yt-label">受眾</div>
+      <p class="yt-text">「AI X 流量 X 私域 X 數位變現」；受眾為想用 AI 變現的個人/小團隊</p>
+      <div class="yt-label">近期影片</div>
+      <p class="yt-recent">「Codex 保姆級教學」｜「Claude Cowork/Code 打造 AI 員工」｜「一人公司 OS」（內容偏 AI builder）</p>
+      <div class="yt-label">備註</div>
+      <p class="yt-text">內容正轉向 AI builder/開發者（同美國頻道趨勢），受眾契合度中等</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- TW excluded / notes -->
+<section>
+  <div class="section-header"><h2>排除與注意事項</h2></div>
+  <div class="info-card red">
+    <strong>排除（受眾錯位或規模過大）：</strong>
+    <ul class="excluded-list">
+      <li><strong>志祺七七 (1.66M)、蘋果爹 (623K)</strong> — 規模過大、議題泛綜合，非聚焦上班族 AI 工具</li>
+      <li><strong>蕾咪 (370K)、懶錢包 (383K)</strong> — 理財為主，受眾雖為上班族但 vertical 偏離會議/訪談</li>
+      <li><strong>李宏毅、李沐 等 AI 學術頻道</strong> — 受眾為 ML 工程師/研究生，非白領上班族</li>
+      <li><strong>簡體中國頻道</strong>（李厂长、小桥AI世界、二一的笔记等）— 受眾非台灣用戶，已排除</li>
+    </ul>
+  </div>
+  <div class="info-card red" style="margin-top:14px;">
+    <strong>競品檢核（台灣市場）：</strong>傳譯寶AI、AI聽寫大哥、Notta（台灣有在地化）、雅婷逐字稿、Heptabase、好享聽、以及 Otter / Fireflies 等國際品牌。Austin Chou 已接過「傳譯寶AI」，接洽他時需確認檔期與排他條款。
+  </div>
+</section>
+
+<!-- TW next steps -->
+<section id="tw-next">
+  <div class="section-header"><h2>建議接洽策略（台灣）</h2></div>
+  <div class="next-step">
+    <ol>
+      <li><strong>優先 Wave（4 位）：</strong>泛科學院、Austin Chou、雷蒙三十、ami.moment — AI 工具/生產力題材成熟，受眾最精準，且多數已有業配模式</li>
+      <li><strong>vertical 測試：</strong>査理的創業化合物（訪談）、社畜倫森（Notion/上班族）、安娜馭房術（房仲）、張邁可（業務）各代表一個會議/訪談密集場景，可各打一支驗證轉換</li>
+      <li><strong>接洽前驗證：</strong>用 Social Blade 看 30 天觀看趨勢；台灣頻道商業合作多走 email（多數在頻道簡介留信箱，如經理人、七七行銷筆記、汛哥等）</li>
+      <li><strong>話術角度：</strong>主打「開會/上課/訪談一鍵生成逐字稿與摘要、自動建代辦」，並可強調繁中辨識與台灣口音支援作為對國際品牌的差異點</li>
+    </ol>
+  </div>
+  <div class="info-card yellow">
+    <strong>仍需 User 確認：</strong>合作預算（台灣中型頻道單支業配約 NT$3 萬–15 萬不等，視頻道與形式）、是否優先某一 vertical（AI 工具教學 / Notion / 業務 / 房仲 / 訪談型）、產品繁中與台灣口音辨識是否為主打賣點。
+  </div>
+</section>
+
+</main>
+</div><!-- end tab-tw -->
 
 <footer>
   <div class="container">
     資料來源：<code>yt-dlp 2026.03.17</code> 直連 YouTube channel about + videos API（2026-05-26 抓取）。<br>
     所有訂閱數與近期影片標題均為驗證值；正式接洽前再用 Social Blade 看 30 天動態與 median view count。<br>
-    版本記錄：v1（10 估計）→ v2（10 驗證）→ v3（10 受眾驗證，剔除 5 位 AI builder）→ <strong>v4（擴充至 20 位）</strong>
+    版本記錄：美國 v4（20 位）＋ 台灣 v1（15 位，以 @austinchou888 為對標基準）。
   </div>
 </footer>
+
+<script>
+  function switchTab(tabId, btn) {
+    document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+    document.querySelectorAll('.region-tab').forEach(function(b) { b.classList.remove('active'); });
+    document.getElementById(tabId).classList.add('active');
+    btn.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
 
 </body>
 </html>
